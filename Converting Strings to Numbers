@@ -1,0 +1,21 @@
+#include <sstream>
+#include <iostream>
+using namespace std;
+
+int main(){
+    string str;
+    cin>>str;
+    stringstream aa(str);
+    int x;
+    for(int i=0;i<str.size(); i++){
+       aa>>x;
+       if(str[i]!=','){
+           cout<<str[i];
+       } 
+       else {
+       cout<<"\n";
+       }
+    }
+    
+    
+}
